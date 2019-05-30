@@ -17,14 +17,13 @@ end
 
 # load units
 0.step(3, 1) do |unit|
-	p "unidad #{unit}"
 	recargar(unit)
 end
 
-for unit in 0...3
+0.step(3, 1) do |unit|
 	puts "unidad - #{unit} "
-	for light in 0...3
-		puts "light #{light} ... horas  #{@classroom[unit][light]}"
+	0.step(3, 1) do |light|
+		 puts "light #{light} ... horas  #{@classroom[unit][light]}"
 		
 	end
 end
